@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    height: 100vh;
+    background-image: linear-gradient(45deg, green,red);
+    /* background-repeat: no-repeat; */
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#login .container #login-row #login-column #login-box {
+    margin-top: 50px;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid #9c9c9c;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 0;
+}
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+.footer_login a{
+color: white;
+text-decoration:none;
+font-size: 23px;
+transition: .4s;
+}
+
+.footer_login a:hover{
+    color:#eaeaea;
+    text-decoration: underline !important;
+}
+.logo_img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    /* padding: 10px; */
+}
+
+.login_header{
+    color: white;
+}
+.logo_title{
+    margin-top: 15px;
+    padding: 2px;
+    text-align: center;
+}
+.footer_login{
+    margin: 30px;
+    padding: 30px;
+    color: white;
+}
+.footer_login span a{
+    text-decoration: none;
+    color: white;
+}
+
+#pass_eye{
+    position: relative;
+}
+#pass_eye .p-viewer i{
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+
+}
+#login-box {
+    background-image: url(http://127.0.0.1:8000/assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+#login-form{
+    border-radius: 5px;
+}
+.text-info {
+    color: #000!important;
+}
+.form-control {
+    opacity: 0.85;
+}
+
+
+/*------Tooltip------*/
+#tooltip{
+    position: relative;
+    display: inline-block;
+}
+#tooltipText{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    white-space: nowrap;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+#tooltipText::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+#tooltip:hover #tooltipText{
+    top: -45px;
+    visibility: visible;
+    opacity: 1;
+}
+.footer span{
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width: 460px){
+    .company_name {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .company_name {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .company_name {
+        font-size: 19px;
+    }
+}
